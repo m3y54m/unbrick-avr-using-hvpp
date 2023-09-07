@@ -41,7 +41,7 @@ This is the code that finally worked for me.
 #define  BS1     9
 #define  XA0     8
 #define  XA1     A5    
-#define  RST     A4    // 12V Step up converter enable (12V_EN)
+#define  RST     A4    // 12V RESET enable (active-low)
 #define  XTAL1   A3
 #define  BUTTON  A2    // Run button
 // Target-specific Pin Assignments 
@@ -68,7 +68,7 @@ void setup()  // run once, when the sketch starts
   pinMode(XA0, OUTPUT);
   pinMode(XA1, OUTPUT);
   pinMode(PAGEL, OUTPUT);
-  pinMode(RST, OUTPUT);  // signal to level shifter for +12V !RESET
+  pinMode(RST, OUTPUT);  // signal to control +12V RESET
   pinMode(BS2, OUTPUT);
   pinMode(XTAL1, OUTPUT);
   
@@ -76,7 +76,7 @@ void setup()  // run once, when the sketch starts
   digitalWrite(BUTTON, HIGH);  // turn on internal pullup resistor
 
   // Initialize output pins as needed
-  digitalWrite(RST, HIGH); // Turn off 12V step-up converter (non-inverting, unlike original circuit
+  digitalWrite(RST, HIGH); // Pull RESET pin to GND (according to NPN transistor circuit)
   digitalWrite(VCC, LOW); 
 }
 
@@ -116,7 +116,7 @@ void loop()  // run over and over again
   delay(1);
   digitalWrite(OE, HIGH);
   delay(1);
-  digitalWrite(RST, LOW); // Apply 12V to !RESET thru level shifter
+  digitalWrite(RST, LOW); // Apply 12V to RESET
   delay(1);
   digitalWrite(WR, HIGH);   // Now that we're in programming mode we can disable !WR
 
