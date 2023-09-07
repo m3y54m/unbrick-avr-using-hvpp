@@ -1,8 +1,10 @@
 # Unbrick AVR Microcontrollers Using HVPP
 
-Unbrick my bricked ATtiny1313A microcontroller using High-Volatge Parallel Programming method programmed on an Arduino Uno board.
+Unbrick my bricked ATtiny1313A microcontroller using HVPP (High-Volatge Parallel Programming) method programmed on an Arduino Uno board.
 
 ![image](https://github.com/m3y54m/unbrick-avr-using-hvpp/assets/1549028/e8905640-c87e-4590-a0c2-e1f62ffed233)
+
+HVPP pins in ATtiny2313A:
 
 ![image](https://github.com/m3y54m/unbrick-avr-using-hvpp/assets/1549028/8ca2dba6-3e4b-4c5e-9643-6452ff74aafe)
 
