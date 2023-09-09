@@ -32,6 +32,7 @@ This is the code that finally worked for me.
 // Note: I modified the fuse byte values according to ATtiny2313 defaults
 //       adopted from [AVR® Fuse Calculator](https://www.engbedded.com/fusecalc/)
 
+// Pin assignments for the Arduino Uno board (Feel free to modify based on your specific board configurations)
 // Note: Analog inputs 0-5 can be addressed as digital outputs 14-19
 #define  DATA    PORTD // PORTD = Arduino Digital pins 0-7
 #define  DATAIN  PIND  // Corresponding inputs
