@@ -353,7 +353,7 @@ int hex2dec(byte c) { // converts one HEX character into a number
 
 ### References:
 
-- [ATtiny2313A Datasheet > 21.2 Parallel Programming](https://ww1.microchip.com/downloads/en/DeviceDoc/doc8246.pdf)
+- [ATtiny2313A Datasheet >> 21.2 Parallel Programming](https://ww1.microchip.com/downloads/en/DeviceDoc/doc8246.pdf)
 - [AVR® Programming Interfaces](https://microchipdeveloper.com/8avr:programminginterfaces)
 - [Un-Brick an AVR® Xplained Board](https://microchipdeveloper.com/boards:debugbrick)
 - [AVR® Fuse Calculator](https://www.engbedded.com/fusecalc/)
