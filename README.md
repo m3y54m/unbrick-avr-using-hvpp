@@ -2,6 +2,8 @@
 
 Unbrick my bricked ATtiny1313A microcontroller using HVPP (High-Volatge Parallel Programming). I utilized an Arduino board and programmed it to function as an HVPP programmer.
 
+This method can be used for any other AVR microcontroller that supports HVPP.
+
 ![image](https://github.com/m3y54m/unbrick-avr-using-hvpp/assets/1549028/e8905640-c87e-4590-a0c2-e1f62ffed233)
 
 HVPP pins in ATtiny2313A:
